@@ -26,8 +26,11 @@ import * as recommendations from "./recommendations.json";
 
 const App =() =>{
   const [weather, setWeather] = React.useState([])
+<<<<<<< HEAD
   const [loading, setLoading] = React.useState(true)
   const [errorMessage, setErrorMessage] = React.useState(null)
+=======
+>>>>>>> origin/master
   const APIKEY = `4ceb0fa6fd7e05f54a5b2b782fc11334`
 
   async function fetchData(e) {
@@ -70,6 +73,7 @@ const App =() =>{
         )}
   }
 
+<<<<<<< HEAD
   const [searchValue, setSearchValue] = React.useState("");
   
   const handleInputChange =(e) =>{
@@ -195,6 +199,29 @@ const App =() =>{
 
   
 
+=======
+  return (
+    <div className="App">
+      <h3>WEATHER APP</h3>
+      <Form getWeather={fetchData} />
+      {console.log(weather.data)}
+      <Weather
+      weather={weather}
+      city={weather.city}
+      country={weather.country}
+      date={weather.date}
+      description={weather.description}
+      temperature={weather.temperature}
+      recommendation={weather.recommendation}
+      icon={weather.icon}
+      error={weather.error}
+      />
+      {console.log(weather.data)}
+    </div>
+  )
+
+}
+>>>>>>> origin/master
 
 
 

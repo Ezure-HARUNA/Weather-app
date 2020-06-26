@@ -7,6 +7,7 @@ const Form = (props) => {
             <input type="text" placeholder="country" name="country"/>
             <button>Submit</button>
         </form>
+<<<<<<< HEAD
 
         //見本
         <>
@@ -17,9 +18,14 @@ const Form = (props) => {
           </SearchIcon>
         </SearchBar>
       </>
+=======
+>>>>>>> origin/master
     )
 }
 
 export default Form;
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> origin/master
