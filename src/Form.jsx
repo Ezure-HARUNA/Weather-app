@@ -7,7 +7,19 @@ const Form = (props) => {
             <input type="text" placeholder="country" name="country"/>
             <button>Submit</button>
         </form>
+
+        //見本
+        <>
+        <SearchBar showResult={showResultmada} onSubmit={props.getWeather}>
+          <SearchInput type="text" value={value} placeholder="Enter city" onChange={change} />
+          <SearchIcon>
+            <FontAwesomeIcon icon={faSearch} />
+          </SearchIcon>
+        </SearchBar>
+      </>
     )
 }
 
 export default Form;
+
+
